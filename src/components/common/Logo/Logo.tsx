@@ -7,8 +7,8 @@ interface Props {
 const Logo: React.FC<Props> = ({ variant = 'dark' }) => {
   return (
     <a href='' className={styles.logo}>
-      {variant === 'dark' && <img src='/logo.png' alt='logo' />}
-      {variant === 'light' && <img src='/logo-light.png' alt='logo' />}
+      {variant === 'dark' && <img src='logo.png' alt='logo' />}
+      {variant === 'light' && <img src='logo-light.png' alt='logo' />}
     </a>
   );
 };

@@ -20,22 +20,22 @@
       {
         "title": "Fair Pricing",
         "text": "We offer a balanced pricing model that gives you full value without hidden fees or unnecessary complexity.",
-        "icon": "/icons/payments-icon.svg"
+        "icon": "icons/payments-icon.svg"
       },
       {
         "title": "Easy Integration",
         "text": "Our product is designed to connect smoothly with your existing tools and systems — minimal setup, maximum compatibility.",
-        "icon": "/icons/integration-icon.svg"
+        "icon": "icons/integration-icon.svg"
       },
       {
         "title": "Cross-Platform",
         "text": "Whether you're on desktop, mobile, or web — the experience remains consistent, intuitive, and optimized for every device.",
-        "icon": "/icons/devices-icon.svg"
+        "icon": "icons/devices-icon.svg"
       },
       {
         "title": "Transparent",
         "text": "Clear structure, clean UI, and open communication — no black boxes or confusing terms. You always know what’s happening.",
-        "icon": "/icons/fact-check-icon.svg"
+        "icon": "icons/fact-check-icon.svg"
       }
     ]
   },
