@@ -17,7 +17,7 @@ const Greetings: React.FC = () => {
         ))}
         <Button title={'Get Started'} />
       </div>
-      <img className={styles.image} src='/greetings-image.png' alt='' />
+      <img className={styles.image} src='greetings-image.png' alt='' />
     </section>
   );
 };
