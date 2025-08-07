@@ -1,10 +1,8 @@
 # Fun Project: Demo Landing Page for a Fictional E-Commerce Product
 
-<img width="768" alt="screenshot" src="https://github.com/user-attachments/assets/3160930b-8c20-4236-acd1-0cac58338361" />
-
 [Here is](https://alexey-hohlov.github.io/our-product/) a live demo, deployed on GitHub Pages 🌎
 
-
+<img width="768" alt="screenshot" src="https://github.com/user-attachments/assets/3160930b-8c20-4236-acd1-0cac58338361" />
 
 I've created a clean, minimalist design featuring a "glass navbar" aesthetic with careful spacing. This fully responsive landing page combines text sections with several interactive components including an accordion, drawer, and - of course - everyone's favorite headache: a slider.
 
