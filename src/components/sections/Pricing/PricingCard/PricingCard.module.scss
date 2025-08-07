@@ -1,0 +1,38 @@
+.card {
+  background: $color-white;
+  border: 1px solid $color-secondary;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 60px;
+  min-height: 550px;
+
+  .textWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .features {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  h4 {
+    text-align: center;
+  }
+
+  span {
+    font-size: 22px;
+    font-weight: 600;
+    color: $color-primary;
+    align-self: center;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    min-height: 450px;
+  }
+}

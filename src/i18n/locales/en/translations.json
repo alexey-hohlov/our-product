@@ -1,0 +1,151 @@
+{
+  "navbar": {
+    "links": [
+      "About Us",
+      "Documents",
+      "Register"
+    ]
+  },
+  "greetings": {
+    "title": "Welcome to Our Product",
+    "text": [
+      "Experience a new standard in modern solutions. Our product is crafted to meet the highest expectations in performance, design, and usability.",
+      "Built with innovation at its core, it adapts effortlessly to your needs — whether simple or complex.",
+      "Streamlined, reliable, and future-ready — it's everything you need, without the distractions you don't."
+    ]
+  },
+  "advantages": {
+    "title": "Our Advantages",
+    "cards": [
+      {
+        "title": "Fair Pricing",
+        "text": "We offer a balanced pricing model that gives you full value without hidden fees or unnecessary complexity.",
+        "icon": "/icons/payments-icon.svg"
+      },
+      {
+        "title": "Easy Integration",
+        "text": "Our product is designed to connect smoothly with your existing tools and systems — minimal setup, maximum compatibility.",
+        "icon": "/icons/integration-icon.svg"
+      },
+      {
+        "title": "Cross-Platform",
+        "text": "Whether you're on desktop, mobile, or web — the experience remains consistent, intuitive, and optimized for every device.",
+        "icon": "/icons/devices-icon.svg"
+      },
+      {
+        "title": "Transparent",
+        "text": "Clear structure, clean UI, and open communication — no black boxes or confusing terms. You always know what’s happening.",
+        "icon": "/icons/fact-check-icon.svg"
+      }
+    ]
+  },
+  "reviews": {
+    "title": "What Our Clients Say",
+    "cards": [
+      {
+        "title": "Emily Stone",
+        "icon": "/assets/icons/stars.svg",
+        "text": "This product exceeded my expectations. It's fast, intuitive, and the support team is outstanding!",
+        "id": "emily"
+      },
+      {
+        "title": "Daniel Brooks",
+        "icon": "/assets/icons/stars.svg",
+        "text": "Finally, a tool that just works. Integration was a breeze and the interface is super clean.",
+        "id": "daniel"
+      },
+      {
+        "title": "Sarah Lee",
+        "icon": "/assets/icons/stars.svg",
+        "text": "I’ve tried many solutions, but this one stands out. Reliable, simple, and well-priced.",
+        "id": "sarah"
+      },
+      {
+        "title": "James Carter",
+        "icon": "/assets/icons/stars.svg",
+        "text": "Great product and even better service. Highly recommended to any growing team.",
+        "id": "james"
+      },
+      {
+        "title": "Olivia Martin",
+        "icon": "/assets/icons/stars.svg",
+        "text": "Love the transparency and speed. Makes our daily workflow so much smoother!",
+        "id": "olivia"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Pricing",
+    "description": "We offer several pricing plans tailored to different needs, so you can easily find the one that suits your workflow.",
+    "cards": [
+      {
+        "title": "Starter",
+        "price": "30-day free trial",
+        "features": [
+          "Access to core features",
+          "No credit card required",
+          "Email support"
+        ]
+      },
+      {
+        "title": "Standard",
+        "price": "$15 / month",
+        "features": [
+          "Everything in Starter",
+          "Integrations with external services",
+          "Priority email support"
+        ]
+      },
+      {
+        "title": "Pro",
+        "price": "$29 / month",
+        "features": [
+          "Everything in Standard",
+          "Advanced analytics and reporting",
+          "Dedicated account manager"
+        ]
+      }
+    ],
+    "button": "Let’s find the right plan for you!"
+  },
+  "questions": {
+    "title": "Questions",
+    "items": [
+      {
+        "question": "Can I use the product for free?",
+        "answer": "Yes, we offer a free trial with full access for 30 days. No credit card required."
+      },
+      {
+        "question": "What happens after my trial ends?",
+        "answer": "You can choose a subscription plan that fits your needs, or simply let the trial expire with no charges."
+      },
+      {
+        "question": "Is my data secure?",
+        "answer": "Absolutely. We use industry-standard encryption and never share your data with third parties."
+      },
+      {
+        "question": "Can I change my plan later?",
+        "answer": "Of course! You can upgrade, downgrade, or cancel your plan at any time from your account settings."
+      }
+    ]
+  },
+  "footer": {
+    "company": [
+      "About Us",
+      "Terms of Service",
+      "Privacy Policy"
+    ],
+    "support": [
+      "Help Center",
+      "Documentation",
+      "Community",
+      "Contact Support"
+    ],
+    "explore": [
+      "Features",
+      "Pricing",
+      "Why Choose Us",
+      "Get Started"
+    ]
+  }
+}

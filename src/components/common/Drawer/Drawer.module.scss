@@ -1,0 +1,72 @@
+.overlay {
+  cursor: pointer;
+  z-index: 20;
+  position: fixed;
+  inset: 0;
+  background: rgba($color-dark, 0.3);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  animation: overlayHide 300ms ease-out forwards;
+
+  &[data-state='open'] {
+    animation: overlayShow 300ms ease-out forwards;
+  }
+}
+
+.content {
+  z-index: 21;
+  position: fixed;
+  top: 0;
+  border-radius: 10px 0 0 10px;
+  padding: 20px;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background: $color-light;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  animation: contentHide 300ms ease-out forwards;
+
+  &[data-state='open'] {
+    animation: contentShow 300ms ease-out forwards;
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    width: 300px;
+  }
+}
+
+@keyframes overlayShow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes overlayHide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes contentShow {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes contentHide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}

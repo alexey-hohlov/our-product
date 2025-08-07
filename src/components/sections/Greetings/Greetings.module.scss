@@ -1,0 +1,35 @@
+.greetings {
+  display: flex;
+  flex-direction: column;
+
+  button {
+    width: 100%;
+    place-self: center;
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    button {
+      width: max-content;
+    }
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    flex-direction: row;
+    button {
+      place-self: unset;
+    }
+  }
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.image {
+  max-width: 100%;
+  width: 600px;
+  place-self: center;
+}

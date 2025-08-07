@@ -1,0 +1,21 @@
+.slider {
+  margin-top: 20px;
+  display: grid;
+
+  :global(.swiper) {
+    max-width: 100%;
+  }
+}
+
+.list {
+  margin-top: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    'emily sarah'
+    'emily sarah'
+    'emily james'
+    'daniel james'
+    'daniel olivia'
+    'daniel olivia';
+}

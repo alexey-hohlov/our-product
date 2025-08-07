@@ -1,0 +1,30 @@
+.card {
+  user-select: none;
+  background: $color-light-blue;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
+
+.emily {
+  grid-area: emily;
+}
+
+.daniel {
+  grid-area: daniel;
+}
+
+.sarah {
+  grid-area: sarah;
+}
+
+.james {
+  grid-area: james;
+}
+
+.olivia {
+  grid-area: olivia;
+}

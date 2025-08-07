@@ -1,0 +1,79 @@
+.accordion {
+  background: $color-light-blue;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.item {
+  overflow: hidden;
+}
+
+.trigger {
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  background: unset;
+  cursor: pointer;
+  color: $color-secondary;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+
+  &:hover {
+    color: $color-primary;
+
+    svg {
+      fill: $color-primary;
+    }
+  }
+
+  @media (min-width: $breakpoint-sm) {
+    font-size: 22px;
+  }
+}
+
+.content {
+  &[data-state='open'] {
+    animation: slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1);
+  }
+  &[data-state='closed'] {
+    animation: slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1);
+  }
+}
+
+.contentText {
+  padding-top: 10px;
+}
+
+.chevron {
+  fill: $color-secondary;
+  transition: transform 300ms cubic-bezier(0.87, 0, 0.13, 1);
+
+  .trigger[data-state='open'] > & {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}

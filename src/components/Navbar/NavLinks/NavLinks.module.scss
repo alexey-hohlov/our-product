@@ -1,0 +1,23 @@
+.links {
+  width: 100%;
+  max-width: $breakpoint-lg;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+
+  a {
+    color: $color-secondary;
+    font-weight: 500;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+    align-items: center;
+    gap: unset;
+  }
+}

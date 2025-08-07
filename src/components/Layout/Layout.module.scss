@@ -1,0 +1,42 @@
+.layout {
+  background: $color-light;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.wrapper {
+  padding: 0 20px;
+
+  @media (min-width: $breakpoint-sm) {
+    padding: 0 40px;
+  }
+}
+
+.content {
+  padding-top: $navbar-height;
+  max-width: $breakpoint-lg;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-size: 18px;
+
+  h3 {
+    color: $color-primary;
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  h4 {
+    color: $color-secondary;
+    font-weight: 500;
+    font-size: 22px;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    h3 {
+      font-size: 48px;
+    }
+  }
+}

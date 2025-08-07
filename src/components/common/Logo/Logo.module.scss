@@ -1,0 +1,10 @@
+.logo {
+  img {
+    display: block;
+    width: 120px;
+
+    @media (min-width: $breakpoint-md) {
+      width: 150px;
+    }
+  }
+}
