@@ -1,69 +1,29 @@
-# React + TypeScript + Vite
+# Fun Project: Demo Landing Page for a Fictional E-Commerce Product
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Here is](https://alexey-hohlov.github.io/our-product/) a live demo, deployed on GitHub Pages 🌎
 
-Currently, two official plugins are available:
+I've created a clean, minimalist design featuring a "glass navbar" aesthetic with careful spacing. This fully responsive landing page combines text sections with several interactive components including an accordion, drawer, and - of course - everyone's favorite headache: a slider.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+While I normally avoid component libraries for small projects, I got tired of rebuilding the same components. This time I tried Radix UI and loved it - it gives me pre-built accessibility and functionality while keeping full styling control. I used it for the Drawer and Accordion components.
 
-## Expanding the ESLint configuration
+All static content lives in i18-next, prepping the structure for potential multilingual support (because you never know).
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+And yes, integrating the slider with flex container required some... creative CSS solutions to prevent my computer from rendering a million-pixel-wide carousel. It's 2025 - I keep hoping sliders will finally play nice with flexbox, or at least that documentation will start mentioning these issues!
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 💻 Technologies
+* TypeScript
+* React
+* SCSS
+* Css-modules
+* Radix UI
+* i18next
+* Swiper
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🤖 How to run
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+yarn install
+#
+yarn dev
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Go to [http://localhost:5173](http://localhost:5173) to see result
